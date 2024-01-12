@@ -1,0 +1,51 @@
+@import '../../variables';
+
+.banner {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 395px;
+}
+
+.banner-degrader {
+  position: absolute;
+  z-index: 2;
+  opacity: 0.9;
+  width: 100vw;
+  height: 395px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 85.04%);
+}
+
+.banner-info {
+  position: absolute;
+  z-index: 3;
+  padding: 52px 92px;
+  h1 {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+  p {
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 35px;
+  }
+  button {
+    width: 227px;
+    height: 60px;
+    flex-shrink: 0;
+    background-color: $main-color;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
