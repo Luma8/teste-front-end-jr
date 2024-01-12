@@ -1,4 +1,4 @@
-import { Tec, Mec, Beb, Fer, Sau, Esp, Mod, } from '../utils/imageItems';
+import { ItemsImage } from '../utils/ImagesSchema';
 import './items.scss';
 
 const Items = () => {
@@ -7,58 +7,68 @@ const Items = () => {
       <ul className='menu-items'>
         <li>
           <div className="container-items container-items-active">
-            <img src={Tec} alt='Tecnologia' />
+            <img src={ItemsImage.Tec} alt='Tecnologia' />
           </div>
           <p className='red-color'>Tecnologia</p>
         </li>
         <li>
           <div className="container-items">
-            <img src={Mec} alt='Supermercado' />
+            <img src={ItemsImage.Mec} alt='Supermercado' />
           </div>
           <p>Supermercado</p>
         </li>
         <li>
           <div className="container-items">
-            <img src={Beb} alt='Bebidas' />
+            <img src={ItemsImage.Beb} alt='Bebidas' />
           </div>
           <p>Bebidas</p>
         </li>
         <li>
           <div className="container-items">
-            <img src={Fer} alt='Ferramentas' />
+            <img src={ItemsImage.Fer} alt='Ferramentas' />
           </div>
           <p>Ferramentas</p>
         </li>
         <li>
           <div className="container-items">
-            <img src={Sau} alt='Saúde' />
+            <img src={ItemsImage.Sau} alt='Saúde' />
           </div>
           <p>Saúde</p>
         </li>
         <li>
           <div className="container-items">
-            <img src={Esp} alt='Esporte e Fitness' />
+            <img src={ItemsImage.Esp} alt='Esporte e Fitness' />
           </div>
           <p>Esporte e Fitness</p>
         </li>
         <li>
           <div className="container-items">
-            <img src={Mod} alt='Moda' />
+            <img src={ItemsImage.Mod} alt='Moda' />
           </div>
           <p>Moda</p>
         </li>
       </ul>
-      <h1>Produtos relacionados</h1>
-      <table>
-        <tr>
-          <th>Celuar</th>
-          <th>Acessorios</th>
-          <th>Tablets</th>
-          <th>Notebooks</th>
-          <th>TVS</th>
-          <th>Ver todos</th>
-        </tr>
-      </table>
+      <h1 className='midle-title red-color'>Produtos relacionados</h1>
+      <ul className='table-menu'>
+        <li className='red-color'>
+          Celular
+        </li>
+        <li>
+          Acessórios
+        </li>
+        <li>
+          Tablets
+        </li>
+        <li>
+          Notebooks
+        </li>
+        <li>
+          Tvs
+        </li>
+        <li>
+          Ver Todos
+        </li>
+      </ul>
     </div>
   )
 }

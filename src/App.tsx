@@ -1,4 +1,5 @@
 import Banner from "./components/Banner"
+import CarouselReact from "./components/CarouselReact"
 import Items from "./components/Items"
 import Navbar from "./components/navbar"
 
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Banner />
       <Items />
+      <CarouselReact/>
     </>
   )
 }
