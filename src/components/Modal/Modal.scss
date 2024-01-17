@@ -1,0 +1,40 @@
+@import '../../variables';
+
+.modal-content {
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-modal {
+  color: $primria-color;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 1px;
+  margin-bottom: 21px;
+  font-family: 'Lato', sans-serif;
+}
+
+.price-modal {
+  color: $primria-color;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 1px;
+  margin-bottom: 17px;
+  font-family: 'Lato', sans-serif;
+}
+
+.description-modal {
+  color: #222;
+  font-family: 'Lato', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150.5%;
+  letter-spacing: 0.5px;
+}

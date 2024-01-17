@@ -8,11 +8,19 @@ import 'swiper/css/parallax';
 import Back from '../../assets/CaroulelImg/Vector (1).svg';
 import Next from '../../assets/CaroulelImg/Vector.svg';
 import product from '../../mockup/prodcuts.json';
+import Modal from '../Modal';
+
+interface productManager {
+  productName: string;
+  price: number;
+  photo: string;
+  descriptionShort: string;
+}
 
 const CarouselReact = () => {
   const swiperRef = useRef();
   const [modalOpen, setModalOpen] = useState<boolean>(false);
-  const [selecteProduct, setSelectedProduct] = useState(null);
+  const [selecteProduct, setSelectedProduct] = useState<productManager | null>(null);
 
   const handleOpenModal = (product: any) => {
     setSelectedProduct(product);
@@ -23,11 +31,19 @@ const CarouselReact = () => {
     setModalOpen(false);
   };
 
+  console.log(product);
+
   return (
     <div className='container margin-carousel container-carousel'>
       {modalOpen && selecteProduct && (
-        <div>
-          <button onClick={() => handleCloseModal}>xau</button>
+        <div className='modal-container'>
+          <button onClick={() => handleCloseModal()}>close</button>
+          <Modal
+            prodName={selecteProduct.productName}
+            prodPrice={selecteProduct.price.toString()}
+            prodIamge={selecteProduct.photo}
+            prodDescript={selecteProduct.descriptionShort}
+          />
         </div>
       )}
       {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}

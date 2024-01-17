@@ -1,14 +1,29 @@
 .margin-carousel {
   margin-top: 16px;
 }
+
 .container-carousel {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
+
 .swiper-button {
   background: transparent;
   border: none;
   margin: 0 20px;
+}
+
+.modal-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
